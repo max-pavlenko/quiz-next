@@ -24,7 +24,7 @@ const EmailFunnel: FC<Props> = ({onCompleted}) => {
    return (
        <form onSubmit={handleSubmit} className="flex h-[100%] flex-col gap-6">
           <Heading>Enter your email to get your personalised Spiritual Growth Plan</Heading>
-          <Input error={!isValidEmail ? 'Invalid email' : ''} value={email} onChange={handleEmailChange} name="email" type="email"/>
+          <Input error={!isValidEmail && 'Invalid email'} value={email} onChange={handleEmailChange} name="email" type="email"/>
           <Button disabled={!isValidEmail} className="mt-auto">Continue</Button>
        </form>
    );

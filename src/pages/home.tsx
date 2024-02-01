@@ -14,11 +14,11 @@ const HomePage: FC = () => {
    
    return (
        <div className="grid gap-12">
-          <SubscriptionPlans onChange={handlePlanChange} plan={planName}/>
+          <SubscriptionPlans onChange={handlePlanChange} planName={planName}/>
           <Advantages/>
           <Statistics/>
           <Reviews/>
-          <SubscriptionPlans onChange={handlePlanChange} plan={planName}/>
+          <SubscriptionPlans onChange={handlePlanChange} planName={planName}/>
        </div>
    );
 };

@@ -10,7 +10,7 @@ const Statistics: FC = () => {
           <List className="shadow-medium" items={TEXTS.STATS}>
              {({text, percentage}) => (
                  <div className="flex gap-3 w-full text-black font-semibold items-center">
-                    <span className="text-[32px] basis-[9%] text-end font-detail">{percentage}%</span>
+                    <span className="text-[32px] basis-[9%] text-end font-attention">{percentage}%</span>
                     <div className="text-sm">{text}</div>
                  </div>
              )}

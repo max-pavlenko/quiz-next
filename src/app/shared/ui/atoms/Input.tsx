@@ -2,7 +2,7 @@ import {ComponentProps, FC} from 'react';
 
 type Props = {
    name: string;
-   error?: string;
+   error?: string | false;
 } & ComponentProps<'input'>;
 
 const Input: FC<Props> = ({name, error, className, ...props}) => {

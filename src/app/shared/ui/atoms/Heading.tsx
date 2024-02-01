@@ -6,7 +6,7 @@ type Props = {
 
 const Heading: FC<PropsWithChildren<Props>> = ({children, element: Element = 'h2', className, ...props}) => {
    return (
-       <Element className={`text-center text-black text-2xl font-semibold font-detail ${className}`} {...props}>
+       <Element className={`text-center text-black text-2xl font-semibold font-attention ${className}`} {...props}>
           {children}
        </Element>
    );

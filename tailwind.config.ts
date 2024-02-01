@@ -1,4 +1,4 @@
-import type { Config } from "tailwindcss";
+import type {Config} from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -7,7 +7,7 @@ const config: Config = {
   theme: {
     fontFamily: {
       'text': ['Plus Jakarta Sans', 'sans-serif'],
-      'detail': ['"Lora"', 'serif']
+      'attention': ['"Lora"', 'serif']
     },
     extend: {
       colors: {
@@ -15,15 +15,10 @@ const config: Config = {
         text: '#222B38',
         'white-100': "#F1F5FB",
         'white-200': '#CED7E5',
-        'white-400': '#778191',
+        'white-800': '#778191',
       },
       boxShadow: {
         medium: '0px 2px 6px -2px rgba(29, 41, 52, 0.24)'
-      },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
     },
   },

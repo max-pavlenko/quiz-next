@@ -16,7 +16,7 @@ const Carousel = <T extends UniqueNode>({items, currentSlide, className, ...prop
    
    return (
        <div className={`${className} flex flex-col overflow-x-hidden`} {...props}>
-          <ul className="flex gap-0.5 relative" style={{transform: `translateX(-${translateBy}%)`, width: `${items.length * 100}%`}}>
+          <ul className="flex gap-0.5 relative" style={{translate: `-${translateBy}% 0`, width: `${items.length * 100}%`}}>
              {items.map(({id, node}) => (
                  <li key={id} className="w-full">
                     {node}

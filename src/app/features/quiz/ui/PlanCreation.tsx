@@ -12,15 +12,12 @@ const TICKS = 25;
 
 const PlanCreation: FC<Props> = ({onCompleted}) => {
    const [progress, setProgress] = useState(0);
-   const id = useInterval(incrementProgress, CREATION_DURATION_MS / TICKS);
+   const stopInterval = useInterval(incrementProgress, CREATION_DURATION_MS / TICKS);
    
    function incrementProgress() {
-      if (progress >= 100) {
-         clearInterval(id);
-         onCompleted();
-         return;
-      }
-      setProgress((prev) => prev + 100 / TICKS);
+      if (progress < 100) return setProgress((prev) => prev + 100 / TICKS);
+      onCompleted();
+      stopInterval();
    }
    
    return (

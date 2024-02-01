@@ -3,7 +3,12 @@ import {uniquify} from '@/app/shared/utils/uniquify';
 import {Review} from '@/app/features/landing/models/review';
 
 export const TEXTS = {
-   PLAN_PROCESSING: ['Aligning with your goals', 'Reviewing your answers', 'Picking Bible verses and prayers for you', 'Finalizing your personalized plan'],
+   PLAN_PROCESSING: [
+       'Aligning with your goals',
+       'Reviewing your answers',
+       'Picking Bible verses and prayers for you',
+       'Finalizing your personalized plan'
+   ],
    ADVANTAGES: [
       '️You wake up feeling motivated and energized',
       'You start your day in harmony with prayer',
